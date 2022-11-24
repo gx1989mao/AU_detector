@@ -1,0 +1,30 @@
+2022-11-23 20:46:16,793:INFO: ----------------- Options ---------------
+                      arc: resnet50                      
+               batch_size: 64                            
+                crop_size: 224                           
+                  dataset: hybrid                        
+             dataset_path: data/Hybrid                   
+                draw_text: False                         
+                   epochs: 20                            
+                 evaluate: True                          
+                 exp_name: demo                          
+                  gpu_ids: 0                             
+                    input: demo_imgs/1014.jpg            
+                      lam: 0.001                         
+            learning_rate: 1e-05                         
+                   metric: dots                          
+             neighbor_num: 4                             
+         num_main_classes: 27                            
+          num_sub_classes: 14                            
+              num_workers: 4                             
+            optimizer_eps: 1e-08                         
+                   outdir: results\demo\bs_64_seed_0_lr_1e-05
+                   resume: checkpoints/OpenGprahAU-ResNet50_first_stage.pth
+                     seed: 0                             
+             weight_decay: 0.0005                        
+----------------- End -------------------
+2022-11-23 20:46:16,796:INFO: writting logs to file results\demo\bs_64_seed_0_lr_1e-05\test.log
+2022-11-23 20:46:17,300:INFO: Resume form | checkpoints/OpenGprahAU-ResNet50_first_stage.pth ]
+2022-11-23 20:46:17,659:INFO: {'AU prediction:'}
+2022-11-23 20:46:17,660:INFO: {'Nose wrinkler', 'Brow lowerer', 'Lips part', 'Upper lid raiser', 'Upper lip raiser', 'Lip corner puller', 'Cheek raiser', 'Lid tightener'}
+2022-11-23 20:46:17,660:INFO: {'AU1: 32.22 AU2: 13.07 AU4: 75.84 AU5: 60.97 AU6: 80.70 AU7: 88.59 AU9: 77.34 AU10: 79.15 AU11: 13.12      AU12: 73.75 AU13: 0.40 AU14: 35.12 AU15: 9.70 AU16: 43.82 AU17: 19.34 AU18: 2.43 AU19: 4.80 AU20: 15.88      AU22: 2.10 AU23: 6.17 AU24: 6.77 AU25: 95.88 AU26: 28.64 AU27: 19.36 AU32: 2.58 AU38: 5.05 AU39: 1.68      AUL1: 23.38 AUR1: 2.53 AUL2: 21.82 AUR2: 19.11 AUL4: 44.95 AUR4: 6.88 AUL6: 10.01 AUR6: 16.53 AUL10: 5.52       AUR10: 13.95 AUL12: 3.54 AUR12: 2.59 AUL14: 8.91 AUR14: 8.53'}
